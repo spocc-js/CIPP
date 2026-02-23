@@ -50,7 +50,9 @@
             "objectId": "[reference(resourceId('Microsoft.Web/sites', variables('funcAppName')),'2019-08-01', 'full').identity.principalId]",
             "permissions": {
               "keys": [],
-              "secrets": [ "all" ],
+              "secrets": [
+                "all"
+              ],
               "certificates": []
             }
           }
@@ -109,7 +111,9 @@
           ]
         }
       ],
-      "dependsOn": [ "[resourceId('Microsoft.Web/sites', variables('funcAppName'))]" ]
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/sites', variables('funcAppName'))]"
+      ]
     },
     {
       "apiVersion": "2015-08-01",
@@ -167,7 +171,7 @@
         "[resourceId('Microsoft.Web/sites', variables('funcAppName'))]"
       ],
       "properties": {
-        "packageUri": "https://cippreleases.blob.core.windows.net/cipp-api/latest.zip"
+        "packageUri": "https://raw.githubusercontent.com/spocc-js/CIPP/refs/heads/main/deployment/latest.zip"
       }
     },
     {
