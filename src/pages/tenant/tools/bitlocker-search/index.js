@@ -1,6 +1,6 @@
 import { Box, Container } from "@mui/material";
 import { Layout as DashboardLayout } from "../../../../layouts/index.js";
-import CippTenantLookup from "../../../../components/CippComponents/CippTenantLookup";
+import CippBitlockerKeySearch from "../../../../components/CippComponents/CippBitlockerKeySearch";
 
 const Page = () => {
   return (
@@ -10,7 +10,7 @@ const Page = () => {
       }}
     >
       <Container maxWidth={false}>
-        <CippTenantLookup />
+        <CippBitlockerKeySearch />
       </Container>
     </Box>
   );
